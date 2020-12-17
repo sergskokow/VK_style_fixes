@@ -1,0 +1,44 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1608168925787,
+		"name": "Colored icons",
+		"sections": [
+			{
+				"code": "/* Profile page */\n#l_pr .left_icon {\n    filter: brightness(0) saturate(100%) invert(52%) sepia(61%) saturate(482%) hue-rotate(252deg) brightness(96%) contrast(91%);\n}\n/* News feed */\n#l_nwsf .left_icon {\n    filter: brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(1842%) hue-rotate(347deg) brightness(91%) contrast(91%);\n}\n/* Messenger */\n#l_msg .left_icon {\n    filter: brightness(0) saturate(100%) invert(44%) sepia(65%) saturate(3017%) hue-rotate(194deg) brightness(104%) contrast(101%)\n}\n/* Friends */\n#l_fr .left_icon {\n    filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(405%) hue-rotate(71deg) brightness(93%) contrast(91%)\n}\n/* Groups */\n#l_gr .left_icon {\n    filter: brightness(0) saturate(100%) invert(48%) sepia(74%) saturate(484%) hue-rotate(128deg) brightness(107%) contrast(81%);\n}\n/* Photos */\n#l_ph .left_icon {\n    filter: brightness(0) saturate(100%) invert(84%) sepia(13%) saturate(3835%) hue-rotate(308deg) brightness(102%) contrast(112%);\n}\n/* Music */\n#l_aud .left_icon {\n    filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(7255%) hue-rotate(292deg) brightness(109%) contrast(134%)\n}\n/* Video */\n#l_vid .left_icon {\n    filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(7454%) hue-rotate(1deg) brightness(96%) contrast(111%)\n}\n/* Mini-apps */\n#l_mini_apps .left_icon {\n    filter: brightness(0) saturate(100%) invert(39%) sepia(88%) saturate(1107%) hue-rotate(38deg) brightness(90%) contrast(101%)\n}\n/* Market */\n#l_mk .left_icon {\n    filter: brightness(0) saturate(100%) invert(11%) sepia(44%) saturate(6016%) hue-rotate(289deg) brightness(119%) contrast(118%);\n}\n/* Favorites */\n#l_fav .left_icon {\n    filter: brightness(0) saturate(100%) invert(53%) sepia(94%) saturate(1532%) hue-rotate(1deg) brightness(101%) contrast(104%)\n}\n/* Files */\n#l_doc .left_icon {\n    filter: brightness(0) saturate(100%) invert(42%) sepia(1%) saturate(0%) hue-rotate(68deg) brightness(93%) contrast(86%)\n}\n/* Clips */\n#l_svd .left_icon {\n    filter: brightness(10%)\n}\n/* Games */\n#l_ap .left_icon {\n    filter: brightness(0) saturate(100%) invert(91%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(88%) contrast(84%);\n}\n/* VK Pay */\n#l_vkp .left_icon {\n    filter: brightness(0) saturate(100%) invert(71%) sepia(91%) saturate(473%) hue-rotate(356deg) brightness(103%) contrast(108%);\n}\n/* Job */\n#l_job .left_icon {\n    filter: brightness(0) saturate(100%) invert(61%) sepia(45%) saturate(305%) hue-rotate(133deg) brightness(86%) contrast(93%);\n}\n/* Ads */\n#l_ads .left_icon {\n    filter: brightness(0) saturate(100%) invert(79%) sepia(13%) saturate(1037%) hue-rotate(305deg) brightness(103%) contrast(104%);\n}\n/* Manage */\n#l_apm .left_icon {\n    filter: brightness(0) saturate(100%) invert(17%) sepia(82%) saturate(2022%) hue-rotate(343deg) brightness(104%) contrast(86%);\n}\n\n/*\n    Choose your own colors through CSS filters:\n    https://codepen.io/sosuke/pen/Pjoqqp\n    Don't forget to prepend \"brightness(0) saturate(100%)\" for correct coloring\n*/",
+				"domains": [
+					"vk.com"
+				]
+			}
+		],
+		"updateDate": 1608168948280,
+		"_id": "9cfda52d-1e42-44a2-83c6-3281197e5860",
+		"_rev": 1608169535565,
+		"id": 7
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1608168973859,
+		"name": "Colored bar",
+		"sections": [
+			{
+				"code": "/* Bar color */\n#page_header_cont {\n    background-color: LightSteelBlue !important\n}\n/* Bar buttons & text */\n.top_profile_arrow,\n.top_nav_btn_icon,\n.top_audio_player_btn_icon {\n    filter: brightness(0%)\n}\n.top_audio_player_title {\n    color: Black !important\n}",
+				"domains": [
+					"vk.com"
+				]
+			}
+		],
+		"updateDate": 1608168999307,
+		"_id": "dc8a71d3-d599-40cc-a004-620085700dd5",
+		"_rev": 1608169535565,
+		"id": 8
+	}
+]
