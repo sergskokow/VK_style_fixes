@@ -1,0 +1,13 @@
+/* Bar color */
+#page_header_cont {
+    background-color: LightSteelBlue !important
+}
+/* Bar buttons & text */
+.top_profile_arrow,
+.top_nav_btn_icon,
+.top_audio_player_btn_icon {
+    filter: brightness(0%)
+}
+.top_audio_player_title {
+    color: Black !important
+}
