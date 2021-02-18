@@ -1,73 +1,73 @@
 /* Profile page */
-#l_pr .left_icon {
+#l_pr a div svg {
     filter: brightness(0) saturate(100%) invert(52%) sepia(61%) saturate(482%) hue-rotate(252deg) brightness(96%) contrast(91%);
 }
 /* News feed */
-#l_nwsf .left_icon {
+#l_nwsf a div svg {
     filter: brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(1842%) hue-rotate(347deg) brightness(91%) contrast(91%);
 }
 /* Messenger */
-#l_msg .left_icon {
+#l_msg a div svg {
     filter: brightness(0) saturate(100%) invert(44%) sepia(65%) saturate(3017%) hue-rotate(194deg) brightness(104%) contrast(101%)
 }
 /* Friends */
-#l_fr .left_icon {
+#l_fr a div svg {
     filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(405%) hue-rotate(71deg) brightness(93%) contrast(91%)
 }
 /* Groups */
-#l_gr .left_icon {
+#l_gr a div svg {
     filter: brightness(0) saturate(100%) invert(48%) sepia(74%) saturate(484%) hue-rotate(128deg) brightness(107%) contrast(81%);
 }
 /* Photos */
-#l_ph .left_icon {
+#l_ph a div svg {
     filter: brightness(0) saturate(100%) invert(84%) sepia(13%) saturate(3835%) hue-rotate(308deg) brightness(102%) contrast(112%);
 }
 /* Music */
-#l_aud .left_icon {
+#l_aud a div svg {
     filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(7255%) hue-rotate(292deg) brightness(109%) contrast(134%)
 }
 /* Video */
-#l_vid .left_icon {
+#l_vid a div svg {
     filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(7454%) hue-rotate(1deg) brightness(96%) contrast(111%)
 }
 /* Mini-apps */
-#l_mini_apps .left_icon {
+#l_mini_apps a div svg {
     filter: brightness(0) saturate(100%) invert(39%) sepia(88%) saturate(1107%) hue-rotate(38deg) brightness(90%) contrast(101%)
 }
 /* Market */
-#l_mk .left_icon {
+#l_mk a div svg {
     filter: brightness(0) saturate(100%) invert(11%) sepia(44%) saturate(6016%) hue-rotate(289deg) brightness(119%) contrast(118%);
 }
 /* Favorites */
-#l_fav .left_icon {
+#l_fav a div svg {
     filter: brightness(0) saturate(100%) invert(53%) sepia(94%) saturate(1532%) hue-rotate(1deg) brightness(101%) contrast(104%)
 }
 /* Files */
-#l_doc .left_icon {
+#l_doc a div svg {
     filter: brightness(0) saturate(100%) invert(42%) sepia(1%) saturate(0%) hue-rotate(68deg) brightness(93%) contrast(86%)
 }
 /* Clips */
-#l_svd .left_icon {
+#l_svd a div svg {
     filter: brightness(10%)
 }
 /* Games */
-#l_ap .left_icon {
+#l_ap a div svg {
     filter: brightness(0) saturate(100%) invert(91%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(88%) contrast(84%);
 }
 /* VK Pay */
-#l_vkp .left_icon {
+#l_vkp a div svg {
     filter: brightness(0) saturate(100%) invert(71%) sepia(91%) saturate(473%) hue-rotate(356deg) brightness(103%) contrast(108%);
 }
 /* Job */
-#l_job .left_icon {
+#l_job a div svg {
     filter: brightness(0) saturate(100%) invert(61%) sepia(45%) saturate(305%) hue-rotate(133deg) brightness(86%) contrast(93%);
 }
 /* Ads */
-#l_ads .left_icon {
+#l_ads a div svg {
     filter: brightness(0) saturate(100%) invert(79%) sepia(13%) saturate(1037%) hue-rotate(305deg) brightness(103%) contrast(104%);
 }
 /* Manage */
-#l_apm .left_icon {
+#l_apm a div svg {
     filter: brightness(0) saturate(100%) invert(17%) sepia(82%) saturate(2022%) hue-rotate(343deg) brightness(104%) contrast(86%);
 }
 
