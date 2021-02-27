@@ -108,30 +108,26 @@
   {
     "enabled": true,
     "updateUrl": null,
-    "md5Url": null,
     "url": null,
-    "originalMd5": null,
     "installDate": 1613672725556,
     "name": "Colored icons",
     "sections": [
       {
-        "code": "/* Profile page */\n#l_pr a div svg {\n    filter: brightness(0) saturate(100%) invert(52%) sepia(61%) saturate(482%) hue-rotate(252deg) brightness(96%) contrast(91%);\n}\n/* News feed */\n#l_nwsf a div svg {\n    filter: brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(1842%) hue-rotate(347deg) brightness(91%) contrast(91%);\n}\n/* Messenger */\n#l_msg a div svg {\n    filter: brightness(0) saturate(100%) invert(44%) sepia(65%) saturate(3017%) hue-rotate(194deg) brightness(104%) contrast(101%)\n}\n/* Friends */\n#l_fr a div svg {\n    filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(405%) hue-rotate(71deg) brightness(93%) contrast(91%)\n}\n/* Groups */\n#l_gr a div svg {\n    filter: brightness(0) saturate(100%) invert(48%) sepia(74%) saturate(484%) hue-rotate(128deg) brightness(107%) contrast(81%);\n}\n/* Photos */\n#l_ph a div svg {\n    filter: brightness(0) saturate(100%) invert(84%) sepia(13%) saturate(3835%) hue-rotate(308deg) brightness(102%) contrast(112%);\n}\n/* Music */\n#l_aud a div svg {\n    filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(7255%) hue-rotate(292deg) brightness(109%) contrast(134%)\n}\n/* Video */\n#l_vid a div svg {\n    filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(7454%) hue-rotate(1deg) brightness(96%) contrast(111%)\n}\n/* Mini-apps */\n#l_mini_apps a div svg {\n    filter: brightness(0) saturate(100%) invert(39%) sepia(88%) saturate(1107%) hue-rotate(38deg) brightness(90%) contrast(101%)\n}\n/* Market */\n#l_mk a div svg {\n    filter: brightness(0) saturate(100%) invert(11%) sepia(44%) saturate(6016%) hue-rotate(289deg) brightness(119%) contrast(118%);\n}\n/* Favorites */\n#l_fav a div svg {\n    filter: brightness(0) saturate(100%) invert(53%) sepia(94%) saturate(1532%) hue-rotate(1deg) brightness(101%) contrast(104%)\n}\n/* Files */\n#l_doc a div svg {\n    filter: brightness(0) saturate(100%) invert(42%) sepia(1%) saturate(0%) hue-rotate(68deg) brightness(93%) contrast(86%)\n}\n/* Clips */\n#l_svd a div svg {\n    filter: brightness(10%)\n}\n/* Games */\n#l_ap a div svg {\n    filter: brightness(0) saturate(100%) invert(91%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(88%) contrast(84%);\n}\n/* VK Pay */\n#l_vkp a div svg {\n    filter: brightness(0) saturate(100%) invert(71%) sepia(91%) saturate(473%) hue-rotate(356deg) brightness(103%) contrast(108%);\n}\n/* Job */\n#l_job a div svg {\n    filter: brightness(0) saturate(100%) invert(61%) sepia(45%) saturate(305%) hue-rotate(133deg) brightness(86%) contrast(93%);\n}\n/* Ads */\n#l_ads a div svg {\n    filter: brightness(0) saturate(100%) invert(79%) sepia(13%) saturate(1037%) hue-rotate(305deg) brightness(103%) contrast(104%);\n}\n/* Manage */\n#l_apm a div svg {\n    filter: brightness(0) saturate(100%) invert(17%) sepia(82%) saturate(2022%) hue-rotate(343deg) brightness(104%) contrast(86%);\n}\n\n/*\n    Choose your own colors through CSS filters:\n    https://codepen.io/sosuke/pen/Pjoqqp\n    Don't forget to prepend \"brightness(0) saturate(100%)\" for correct coloring\n*/",
+        "code": "/* Profile page */\n#l_pr .LeftNav__icon {\n    color: MediumPurple;\n}\n/* News feed */\n#l_nwsf .LeftNav__icon {\n    color: BurlyWood;\n}\n/* Messenger */\n#l_msg .LeftNav__icon {\n    color: DeepSkyBlue;\n}\n/* Friends */\n#l_fr .LeftNav__icon {\n    color: LimeGreen;\n}\n/* Groups */\n#l_gr .LeftNav__icon {\n    color: LightSeaGreen;\n}\n/* Photos */\n#l_ph .LeftNav__icon {\n    color: Coral;\n}\n/* Music */\n#l_aud .LeftNav__icon {\n    color: Fuchsia;\n}\n/* Video */\n#l_vid .LeftNav__icon {\n    color: Red;\n}\n/* Mini-apps */\n#l_mini_apps .LeftNav__icon {\n    color: SteelBlue;\n}\n/* Market */\n#l_mk .LeftNav__icon {\n    color: DarkOrchid;\n}\n/* Favorites */\n#l_fav .LeftNav__icon {\n    color: Gold;\n}\n/* Files */\n#l_doc .LeftNav__icon {\n    color: DarkGray;\n}\n/* Clips */\n#l_svd .LeftNav__icon {\n    color: Black;\n}\n/* Games */\n#l_ap .LeftNav__icon {\n    color: DarkGray\n}\n/* Stickers */\n#l_stickers .LeftNav__icon {\n    color: SandyBrown;\n}\n/* VK Pay */\n#l_vkp .LeftNav__icon {\n    color: Goldenrod;\n}\n/* Job */\n#l_job .LeftNav__icon {\n    color: CadetBlue;\n}\n/* Ads */\n#l_ads .LeftNav__icon {\n    color: LightCoral\n}\n/* Manage */\n#l_apm .LeftNav__icon {\n    color: FireBrick;\n}",
         "domains": [
           "vk.com"
         ]
       }
     ],
-    "updateDate": 1613672792059,
+    "updateDate": 1614433732154,
     "_id": "fb2dd3e3-ba04-415b-971e-e97c1c97864d",
-    "_rev": 1613672792059,
+    "_rev": 1614433732154,
     "id": 13
   },
   {
     "enabled": true,
     "updateUrl": null,
-    "md5Url": null,
     "url": null,
-    "originalMd5": null,
     "installDate": 1613672757091,
     "name": "Hide call buttons",
     "sections": [
@@ -144,7 +140,7 @@
     ],
     "updateDate": 1613672804339,
     "_id": "67ce3d2e-9192-4e38-9e08-225da88d8151",
-    "_rev": 1613672804339,
+    "_rev": 1614432531103,
     "id": 14
   }
 ]
