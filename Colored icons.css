@@ -1,76 +1,76 @@
 /* Profile page */
-#l_pr .LeftNav__icon {
+#l_pr .LeftMenu__icon {
     color: MediumPurple;
 }
 /* News feed */
-#l_nwsf .LeftNav__icon {
+#l_nwsf .LeftMenu__icon {
     color: BurlyWood;
 }
 /* Messenger */
-#l_msg .LeftNav__icon {
+#l_msg .LeftMenu__icon {
     color: DeepSkyBlue;
 }
 /* Friends */
-#l_fr .LeftNav__icon {
+#l_fr .LeftMenu__icon {
     color: LimeGreen;
 }
 /* Groups */
-#l_gr .LeftNav__icon {
+#l_gr .LeftMenu__icon {
     color: LightSeaGreen;
 }
 /* Photos */
-#l_ph .LeftNav__icon {
+#l_ph .LeftMenu__icon {
     color: Coral;
 }
 /* Music */
-#l_aud .LeftNav__icon {
+#l_aud .LeftMenu__icon {
     color: Fuchsia;
 }
 /* Video */
-#l_vid .LeftNav__icon {
+#l_vid .LeftMenu__icon {
     color: Red;
 }
 /* Mini-apps */
-#l_mini_apps .LeftNav__icon {
+#l_mini_apps .LeftMenu__icon {
     color: SteelBlue;
 }
 /* Market */
-#l_mk .LeftNav__icon {
+#l_mk .LeftMenu__icon {
     color: DarkOrchid;
 }
 /* Favorites */
-#l_fav .LeftNav__icon {
+#l_fav .LeftMenu__icon {
     color: Gold;
 }
 /* Files */
-#l_doc .LeftNav__icon {
+#l_doc .LeftMenu__icon {
     color: DarkGray;
 }
 /* Clips */
-#l_svd .LeftNav__icon {
+#l_svd .LeftMenu__icon {
     color: Black;
 }
 /* Games */
-#l_ap .LeftNav__icon {
+#l_ap .LeftMenu__icon {
     color: DarkGray
 }
 /* Stickers */
-#l_stickers .LeftNav__icon {
+#l_stickers .LeftMenu__icon {
     color: SandyBrown;
 }
 /* VK Pay */
-#l_vkp .LeftNav__icon {
+#l_vkp .LeftMenu__icon {
     color: Goldenrod;
 }
 /* Job */
-#l_job .LeftNav__icon {
+#l_job .LeftMenu__icon {
     color: CadetBlue;
 }
 /* Ads */
-#l_ads .LeftNav__icon {
+#l_ads .LeftMenu__icon {
     color: LightCoral
 }
 /* Manage */
-#l_apm .LeftNav__icon {
+#l_apm .LeftMenu__icon {
     color: FireBrick;
 }

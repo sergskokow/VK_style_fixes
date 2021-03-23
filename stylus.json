@@ -87,9 +87,7 @@
   {
     "enabled": true,
     "updateUrl": null,
-    "md5Url": null,
     "url": null,
-    "originalMd5": null,
     "installDate": 1613672668188,
     "name": "Colored bar",
     "sections": [
@@ -102,7 +100,7 @@
     ],
     "updateDate": 1613672785245,
     "_id": "b4e94152-fc51-4097-a12e-0fa7cf42500e",
-    "_rev": 1613672785245,
+    "_rev": 1614894396495,
     "id": 12
   },
   {
@@ -113,15 +111,15 @@
     "name": "Colored icons",
     "sections": [
       {
-        "code": "/* Profile page */\n#l_pr .LeftNav__icon {\n    color: MediumPurple;\n}\n/* News feed */\n#l_nwsf .LeftNav__icon {\n    color: BurlyWood;\n}\n/* Messenger */\n#l_msg .LeftNav__icon {\n    color: DeepSkyBlue;\n}\n/* Friends */\n#l_fr .LeftNav__icon {\n    color: LimeGreen;\n}\n/* Groups */\n#l_gr .LeftNav__icon {\n    color: LightSeaGreen;\n}\n/* Photos */\n#l_ph .LeftNav__icon {\n    color: Coral;\n}\n/* Music */\n#l_aud .LeftNav__icon {\n    color: Fuchsia;\n}\n/* Video */\n#l_vid .LeftNav__icon {\n    color: Red;\n}\n/* Mini-apps */\n#l_mini_apps .LeftNav__icon {\n    color: SteelBlue;\n}\n/* Market */\n#l_mk .LeftNav__icon {\n    color: DarkOrchid;\n}\n/* Favorites */\n#l_fav .LeftNav__icon {\n    color: Gold;\n}\n/* Files */\n#l_doc .LeftNav__icon {\n    color: DarkGray;\n}\n/* Clips */\n#l_svd .LeftNav__icon {\n    color: Black;\n}\n/* Games */\n#l_ap .LeftNav__icon {\n    color: DarkGray\n}\n/* Stickers */\n#l_stickers .LeftNav__icon {\n    color: SandyBrown;\n}\n/* VK Pay */\n#l_vkp .LeftNav__icon {\n    color: Goldenrod;\n}\n/* Job */\n#l_job .LeftNav__icon {\n    color: CadetBlue;\n}\n/* Ads */\n#l_ads .LeftNav__icon {\n    color: LightCoral\n}\n/* Manage */\n#l_apm .LeftNav__icon {\n    color: FireBrick;\n}",
+        "code": "/* Profile page */\n#l_pr .LeftMenu__icon {\n    color: MediumPurple;\n}\n/* News feed */\n#l_nwsf .LeftMenu__icon {\n    color: BurlyWood;\n}\n/* Messenger */\n#l_msg .LeftMenu__icon {\n    color: DeepSkyBlue;\n}\n/* Friends */\n#l_fr .LeftMenu__icon {\n    color: LimeGreen;\n}\n/* Groups */\n#l_gr .LeftMenu__icon {\n    color: LightSeaGreen;\n}\n/* Photos */\n#l_ph .LeftMenu__icon {\n    color: Coral;\n}\n/* Music */\n#l_aud .LeftMenu__icon {\n    color: Fuchsia;\n}\n/* Video */\n#l_vid .LeftMenu__icon {\n    color: Red;\n}\n/* Mini-apps */\n#l_mini_apps .LeftMenu__icon {\n    color: SteelBlue;\n}\n/* Market */\n#l_mk .LeftMenu__icon {\n    color: DarkOrchid;\n}\n/* Favorites */\n#l_fav .LeftMenu__icon {\n    color: Gold;\n}\n/* Files */\n#l_doc .LeftMenu__icon {\n    color: DarkGray;\n}\n/* Clips */\n#l_svd .LeftMenu__icon {\n    color: Black;\n}\n/* Games */\n#l_ap .LeftMenu__icon {\n    color: DarkGray\n}\n/* Stickers */\n#l_stickers .LeftMenu__icon {\n    color: SandyBrown;\n}\n/* VK Pay */\n#l_vkp .LeftMenu__icon {\n    color: Goldenrod;\n}\n/* Job */\n#l_job .LeftMenu__icon {\n    color: CadetBlue;\n}\n/* Ads */\n#l_ads .LeftMenu__icon {\n    color: LightCoral\n}\n/* Manage */\n#l_apm .LeftMenu__icon {\n    color: FireBrick;\n}",
         "domains": [
           "vk.com"
         ]
       }
     ],
-    "updateDate": 1614433732154,
+    "updateDate": 1616522485973,
     "_id": "fb2dd3e3-ba04-415b-971e-e97c1c97864d",
-    "_rev": 1614433732154,
+    "_rev": 1616522485973,
     "id": 13
   },
   {
@@ -140,7 +138,7 @@
     ],
     "updateDate": 1613672804339,
     "_id": "67ce3d2e-9192-4e38-9e08-225da88d8151",
-    "_rev": 1614432531103,
+    "_rev": 1614894396495,
     "id": 14
   }
 ]
