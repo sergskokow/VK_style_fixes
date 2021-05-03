@@ -1,0 +1,129 @@
+/* ==UserStyle==
+@name           VK style fixes
+@version        1.0.6
+@description    Small stylesheets for new VK interface.
+@author         sergskokow
+@namespace      https://github.com/sergskokow/VK_style_fixes
+@homepageURL    https://github.com/sergskokow/VK_style_fixes
+@updateURL      https://raw.githubusercontent.com/sergskokow/VK_style_fixes/master/vk.css
+==/UserStyle== */
+@-moz-document domain("vk.com") { /* Colored icons */
+    /* Profile page */
+    #l_pr .LeftMenu__icon {
+        color: MediumPurple;
+    }
+    /* News feed */
+    #l_nwsf .LeftMenu__icon {
+        color: BurlyWood;
+    }
+    /* Messenger */
+    #l_msg .LeftMenu__icon {
+        color: DeepSkyBlue;
+    }
+    /* Friends */
+    #l_fr .LeftMenu__icon {
+        color: LimeGreen;
+    }
+    /* Groups */
+    #l_gr .LeftMenu__icon {
+        color: LightSeaGreen;
+    }
+    /* Photos */
+    #l_ph .LeftMenu__icon {
+        color: Coral;
+    }
+    /* Music */
+    #l_aud .LeftMenu__icon {
+        color: Fuchsia;
+    }
+    /* Video */
+    #l_vid .LeftMenu__icon {
+        color: Red;
+    }
+    /* Mini-apps */
+    #l_mini_apps .LeftMenu__icon {
+        color: SteelBlue;
+    }
+    /* Market */
+    #l_mk .LeftMenu__icon {
+        color: DarkOrchid;
+    }
+    /* Favorites */
+    #l_fav .LeftMenu__icon {
+        color: Gold;
+    }
+    /* Files */
+    #l_doc .LeftMenu__icon {
+        color: DarkGray;
+    }
+    /* Clips */
+    #l_svd .LeftMenu__icon {
+        color: Black;
+    }
+    /* Games */
+    #l_ap .LeftMenu__icon {
+        color: DarkGray
+    }
+    /* Stickers */
+    #l_stickers .LeftMenu__icon {
+        color: SandyBrown;
+    }
+    /* VK Pay */
+    #l_vkp .LeftMenu__icon {
+        color: Goldenrod;
+    }
+    /* Job */
+    #l_job .LeftMenu__icon {
+        color: CadetBlue;
+    }
+    /* Ads */
+    #l_ads .LeftMenu__icon {
+        color: LightCoral
+    }
+    /* Manage */
+    #l_apm .LeftMenu__icon {
+        color: FireBrick;
+    }
+}
+@-moz-document domain("vk.com") { /* Fixed sidebar */
+    #side_bar {
+        position: sticky;
+        top: 0 !important;
+    }
+}
+@-moz-document domain("vk.com") { /* Colored bar */
+    /* Bar color */
+    #page_header_cont {
+        background-color: LightSteelBlue !important
+    }
+    /* Bar buttons & text */
+    .TopNavBtn__profileArrow,
+    .top_audio_player_btn_icon,
+    .TopNavBtn__icon {
+        filter: brightness(0%)
+    }
+    .top_audio_player_title {
+        color: Black !important
+    }
+}
+@-moz-document domain("vk.com") { /* Hide call buttons */
+    ._im_create_call,
+    .im-page--header-call {
+        display: none;
+    }
+}
+@-moz-document domain("vk.com") { /* Highlight messages */
+    .im-mess_unread {
+        background: LightBlue!important
+    }
+    .im-mess_editable {
+        border: 2px dashed LightGray;
+        border-radius: 10px
+    }
+    .nim-dialog_unread { /* unread by owner */
+        background: LightBlue!important
+    }
+    .nim-dialog_unread-out { /* unread by other users */
+        background: LightSteelBlue!important
+    }
+}

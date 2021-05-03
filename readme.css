@@ -1,0 +1,34 @@
+.install_button {
+    display: inline;
+    background-color: SteelBlue;
+    border: 2px solid SteelBlue;
+    border-radius: 5px;
+}
+.install_button:hover {
+    background-color: LightSkyBlue;
+    border: 2px solid LightSkyBlue;
+}
+.install_button:active {
+    background-color: RoyalBlue;
+    border: 2px solid RoyalBlue;
+}
+.install_button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.preview {
+    display: inline;
+}
+.unread {
+    background: LightBlue;
+    color: black
+}
+.unread_by_other {
+    background: LightSteelBlue;
+    color: black
+}
+.editable {
+    border: 2px dashed LightGray;
+    border-radius: 3px;
+}
