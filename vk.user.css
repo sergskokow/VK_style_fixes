@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.7
+@version        1.0.8
 @description    Small stylesheets for new VK interface.
 @author         sergskokow
 @namespace      https://github.com/sergskokow/VK_style_fixes
@@ -97,10 +97,9 @@
         background-color: LightSteelBlue !important
     }
     /* Bar buttons & text */
-    .TopNavBtn__profileArrow,
-    .top_audio_player_btn_icon,
-    .TopNavBtn__icon {
-        filter: brightness(0%)
+    .TopNavBtn svg,
+    .top_audio_player_btn svg {
+        color: Black
     }
     .top_audio_player_title {
         color: Black !important
