@@ -1,87 +1,76 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.8
+@version        1.0.9
 @description    Small stylesheets for new VK interface.
-@author         sergskokow
+@author         sergskokow (https://vk.com/sergskokow)
 @namespace      https://github.com/sergskokow/VK_style_fixes
 @homepageURL    https://github.com/sergskokow/VK_style_fixes
 @updateURL      https://raw.githubusercontent.com/sergskokow/VK_style_fixes/master/vk.user.css
+@preprocessor   stylus
+@var            color       bar_color             'Bar color'                           #b0c4de
+@var            color       link_color            'Link color'                          #2a5885
+@var            checkbox    show_call_buttons     'Show call buttons 📞'                1
+@var            checkbox    highlight_editable    'Highlight editable messages'         1
+@var            checkbox    reactions             'Reactions ❤️😂😮😍😥🤬'            1
+@var            text        background_url        'Background image URL with quotes'    none
+@var            range       opacity               'Opacity'                             [1, 0, 1, 0.05]
 ==/UserStyle== */
 @-moz-document domain("vk.com") { /* Colored icons */
-    /* Profile page */
-    #l_pr .LeftMenu__icon {
+    #l_pr .LeftMenu__icon { /* Profile page */
         color: MediumPurple;
     }
-    /* News feed */
-    #l_nwsf .LeftMenu__icon {
+    #l_nwsf .LeftMenu__icon { /* News feed */
         color: BurlyWood;
     }
-    /* Messenger */
-    #l_msg .LeftMenu__icon {
+    #l_msg .LeftMenu__icon { /* Messenger */
         color: DeepSkyBlue;
     }
-    /* Friends */
-    #l_fr .LeftMenu__icon {
+    #l_fr .LeftMenu__icon { /* Friends */
         color: LimeGreen;
     }
-    /* Groups */
-    #l_gr .LeftMenu__icon {
+    #l_gr .LeftMenu__icon { /* Groups */
         color: LightSeaGreen;
     }
-    /* Photos */
-    #l_ph .LeftMenu__icon {
+    #l_ph .LeftMenu__icon { /* Photos */
         color: Coral;
     }
-    /* Music */
-    #l_aud .LeftMenu__icon {
+    #l_aud .LeftMenu__icon { /* Music */
         color: Fuchsia;
     }
-    /* Video */
-    #l_vid .LeftMenu__icon {
+    #l_vid .LeftMenu__icon { /* Video */
         color: Red;
     }
-    /* Mini-apps */
-    #l_mini_apps .LeftMenu__icon {
+    #l_mini_apps .LeftMenu__icon { /* Mini-apps */
         color: SteelBlue;
     }
-    /* Market */
-    #l_mk .LeftMenu__icon {
+    #l_mk .LeftMenu__icon { /* Market */
         color: DarkOrchid;
     }
-    /* Favorites */
-    #l_fav .LeftMenu__icon {
+    #l_fav .LeftMenu__icon { /* Favorites */
         color: Gold;
     }
-    /* Files */
-    #l_doc .LeftMenu__icon {
+    #l_doc .LeftMenu__icon { /* Files */
         color: DarkGray;
     }
-    /* Clips */
-    #l_svd .LeftMenu__icon {
+    #l_svd .LeftMenu__icon { /* Clips */
         color: Black;
     }
-    /* Games */
-    #l_ap .LeftMenu__icon {
-        color: DarkGray
+    #l_ap .LeftMenu__icon { /* Games */
+        color: DarkGray;
     }
-    /* Stickers */
-    #l_stickers .LeftMenu__icon {
+    #l_stickers .LeftMenu__icon { /* Stickers */
         color: SandyBrown;
     }
-    /* VK Pay */
-    #l_vkp .LeftMenu__icon {
+    #l_vkp .LeftMenu__icon { /* VK Pay */
         color: Goldenrod;
     }
-    /* Job */
-    #l_job .LeftMenu__icon {
+    #l_job .LeftMenu__icon { /* Job */
         color: CadetBlue;
     }
-    /* Ads */
-    #l_ads .LeftMenu__icon {
-        color: LightCoral
+    #l_ads .LeftMenu__icon { /* Ads */
+        color: LightCoral;
     }
-    /* Manage */
-    #l_apm .LeftMenu__icon {
+    #l_apm .LeftMenu__icon { /* Manage */
         color: FireBrick;
     }
 }
@@ -92,37 +81,129 @@
     }
 }
 @-moz-document domain("vk.com") { /* Colored bar */
-    /* Bar color */
-    #page_header_cont {
-        background-color: LightSteelBlue !important
+    #page_header_cont { /* Bar color */
+        background-color: bar_color !important;
     }
-    /* Bar buttons & text */
     .TopNavBtn svg,
-    .top_audio_player_btn svg {
-        color: Black
+    .top_audio_player_btn svg { /* Bar buttons & text */
+        color: Black;
     }
     .top_audio_player_title {
-        color: Black !important
+        color: Black !important;
     }
 }
 @-moz-document domain("vk.com") { /* Hide call buttons */
-    ._im_create_call,
-    .im-page--header-call {
-        display: none;
+    if !show_call_buttons {
+        ._im_create_call,
+        .im-page--header-call {
+            display: none;
+        }
     }
 }
 @-moz-document domain("vk.com") { /* Highlight messages */
-    .im-mess_unread {
-        background: LightBlue!important
+    .im-mess_unread { /* Unread messages */
+        background: LightBlue !important;
     }
-    .im-mess_editable {
-        border: 2px dashed LightGray;
-        border-radius: 10px
+    if highlight_editable {
+        .im-mess_editable { /* Editable messages */
+            border: 2px dashed LightGray;
+            border-radius: 10px;
+        }
     }
-    .nim-dialog_unread { /* unread by owner */
-        background: LightBlue!important
+    .nim-dialog_unread { /* Unread by owner */
+        background: LightBlue !important;
     }
-    .nim-dialog_unread-out { /* unread by other users */
-        background: LightSteelBlue!important
+    .nim-dialog_unread-out { /* Unread by other users */
+        background: LightSteelBlue !important;
+    }
+    .nim-dialog--unread { /* Unread dialog sign and message counter */
+        background: SteelBlue !important;
+    }
+}
+@-moz-document domain("vk.com") { /* Highlight users online */
+    ._online.online:not(.fc_contact_photo) {
+        border-radius: 50%/50%;
+        box-shadow: 0 0 1px 3px LimeGreen;
+    }
+}
+@-moz-document domain("vk.com") { /* Post buttons and counters */
+    .post_info,
+    #wl_post_actions_wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .wall_text,
+    .replies,
+    .post_replies_header {
+        flex-basis: 100%;
+    }
+    .post_info > .like_wrap { /* Buttons indent */
+        padding-top: var(--post-action-status-bar-vertical-padding);
+        padding-left: var(--post-padding-lr);
+    }
+    .PostActionStatusBar {
+        padding-right: 0 !important;
+    }
+    .like_views { /* Views counter */
+        margin-left: 8px;
+    }
+    .ReactionsPreview__items { /* Icons of all reactions in post.
+        It's not so informative, also can be confused with like button. */
+        display: none;
+    }
+    if !reactions {
+        .ReactionsMenu {
+            display: none;
+        }
+    }
+    .ReactionsPreview__count { /* Like counter */
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .ReactionsPreview.ReactionsPreview--active > .ReactionsPreview__count { /* Liked post counter */
+        color: Red;
+    }
+    .like_wrap { /* Views counter on the right side */
+        flex-grow: 1;
+    }
+    .wall_text { /* Audio plugin correct sizing */
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+@-moz-document domain("vk.com") { /* Background image and interface */
+    body {
+        background-image: url(background_url) !important;
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }
+    .page_block,
+    #side_bar_inner,
+    .chat_onl_inner { /* All panels */
+        background-color: rgba(255, 255, 255, opacity) !important;
+    }
+    #side_bar_inner { /* Oraque sidebar for better view with background image */
+        width: 100%;
+        padding-left: 10px;
+        margin-top: 63px;
+        padding-top: 10px;
+        border-radius: 4px;
+        box-shadow: var(--page-block-shadow);
+    }
+    a.left_row {
+        width: 100% !important;
+    }
+    #page_layout {
+        width: calc(var(--layout-width) + 10px);
+    }
+    #page_header_cont {
+        border-bottom: 0 !important;
+    }
+    a {
+        color: link_color;
+    }
+    .label:hover {
+        color: link_color !important;
     }
 }
