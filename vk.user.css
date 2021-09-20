@@ -1,19 +1,22 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.9
+@version        1.0.10
 @description    Small stylesheets for new VK interface.
 @author         sergskokow (https://vk.com/sergskokow)
 @namespace      https://github.com/sergskokow/VK_style_fixes
 @homepageURL    https://github.com/sergskokow/VK_style_fixes
 @updateURL      https://raw.githubusercontent.com/sergskokow/VK_style_fixes/master/vk.user.css
 @preprocessor   stylus
+@var            checkbox    colored_bar           'Colored bar'                         1
 @var            color       bar_color             'Bar color'                           #b0c4de
+@var            checkbox    links                 'Custom link color'                   0
 @var            color       link_color            'Link color'                          #2a5885
 @var            checkbox    show_call_buttons     'Show call buttons 📞'                1
 @var            checkbox    highlight_editable    'Highlight editable messages'         1
 @var            checkbox    reactions             'Reactions ❤️😂😮😍😥🤬'            1
 @var            text        background_url        'Background image URL with quotes'    none
-@var            range       opacity               'Opacity'                             [1, 0, 1, 0.05]
+@var            checkbox    panels                'Translucent panels'                  0
+@var            color       panel_color           'Panels color'                        #ffff
 ==/UserStyle== */
 @-moz-document domain("vk.com") { /* Colored icons */
     #l_pr .LeftMenu__icon { /* Profile page */
@@ -82,7 +85,9 @@
 }
 @-moz-document domain("vk.com") { /* Colored bar */
     #page_header_cont { /* Bar color */
-        background-color: bar_color !important;
+        if colored_bar {
+            background-color: bar_color !important;
+        }
     }
     .TopNavBtn svg,
     .top_audio_player_btn svg { /* Bar buttons & text */
@@ -127,31 +132,6 @@
     }
 }
 @-moz-document domain("vk.com") { /* Post buttons and counters */
-    .post_info,
-    #wl_post_actions_wrap {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-    }
-    .wall_text,
-    .replies,
-    .post_replies_header {
-        flex-basis: 100%;
-    }
-    .post_info > .like_wrap { /* Buttons indent */
-        padding-top: var(--post-action-status-bar-vertical-padding);
-        padding-left: var(--post-padding-lr);
-    }
-    .PostActionStatusBar {
-        padding-right: 0 !important;
-    }
-    .like_views { /* Views counter */
-        margin-left: 8px;
-    }
-    .ReactionsPreview__items { /* Icons of all reactions in post.
-        It's not so informative, also can be confused with like button. */
-        display: none;
-    }
     if !reactions {
         .ReactionsMenu {
             display: none;
@@ -164,13 +144,6 @@
     .ReactionsPreview.ReactionsPreview--active > .ReactionsPreview__count { /* Liked post counter */
         color: Red;
     }
-    .like_wrap { /* Views counter on the right side */
-        flex-grow: 1;
-    }
-    .wall_text { /* Audio plugin correct sizing */
-        max-width: 100%;
-        box-sizing: border-box;
-    }
 }
 @-moz-document domain("vk.com") { /* Background image and interface */
     body {
@@ -181,29 +154,41 @@
     .page_block,
     #side_bar_inner,
     .chat_onl_inner { /* All panels */
-        background-color: rgba(255, 255, 255, opacity) !important;
+        if panels {
+            background-color: panel_color !important;
+        }
     }
-    #side_bar_inner { /* Oraque sidebar for better view with background image */
-        width: 100%;
-        padding-left: 10px;
-        margin-top: 63px;
-        padding-top: 10px;
-        border-radius: 4px;
-        box-shadow: var(--page-block-shadow);
+    #side_bar_inner { /* Opaque sidebar for better view with background image */
+        if panels {
+            width: 100%;
+            padding-left: 10px;
+            margin-top: 63px;
+            padding-top: 10px;
+            border-radius: 4px;
+            box-shadow: var(--page-block-shadow);
+        }
     }
     a.left_row {
-        width: 100% !important;
+        if panels {
+            width: 100% !important;
+        }
     }
     #page_layout {
-        width: calc(var(--layout-width) + 10px);
+        if panels {
+            width: calc(var(--layout-width) + 10px);
+        }
     }
-    #page_header_cont {
+    #page_header_cont { /* Bar bottom border */
         border-bottom: 0 !important;
     }
     a {
-        color: link_color;
+        if links {
+            color: link_color;
+        }
     }
     .label:hover {
-        color: link_color !important;
+        if links {
+            color: link_color !important;
+        }
     }
 }

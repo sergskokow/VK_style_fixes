@@ -19,10 +19,6 @@ Protection against accidental calls. Phone button won't be shown.
 Users online become more visible.
 
 ![Highlight users online](Online.png)
-## Post buttons and counters
-All buttons and counters in one row. Reactions are hidden, but available.
-
-![Buttons](Post%20buttons.png)
 ## Background image and transparent interface
 Photo author: [Ben Mack (Pexels)](https://www.pexels.com/ru-ru/photo/5326945/).
 
