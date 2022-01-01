@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.10
+@version        1.0.11
 @description    Small stylesheets for new VK interface.
 @author         sergskokow (https://vk.com/sergskokow)
 @namespace      https://github.com/sergskokow/VK_style_fixes
@@ -13,7 +13,8 @@
 @var            color       link_color            'Link color'                          #2a5885
 @var            checkbox    show_call_buttons     'Show call buttons 📞'                1
 @var            checkbox    highlight_editable    'Highlight editable messages'         1
-@var            checkbox    reactions             'Reactions ❤️😂😮😍😥🤬'            1
+@var            checkbox    reactions             'Show reactions ❤️😂😮😍😥🤬'        1
+@var            checkbox    services              'Show VK services'                    1
 @var            text        background_url        'Background image URL with quotes'    none
 @var            checkbox    panels                'Translucent panels'                  0
 @var            color       panel_color           'Panels color'                        #ffff
@@ -131,18 +132,11 @@
         box-shadow: 0 0 1px 3px LimeGreen;
     }
 }
-@-moz-document domain("vk.com") { /* Post buttons and counters */
+@-moz-document domain("vk.com") { /* Reactions */
     if !reactions {
         .ReactionsMenu {
             display: none;
         }
-    }
-    .ReactionsPreview__count { /* Like counter */
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .ReactionsPreview.ReactionsPreview--active > .ReactionsPreview__count { /* Liked post counter */
-        color: Red;
     }
 }
 @-moz-document domain("vk.com") { /* Background image and interface */
@@ -189,6 +183,13 @@
     .label:hover {
         if links {
             color: link_color !important;
+        }
+    }
+}
+@-moz-document domain("vk.com") { /* Display VK ecosystem services */
+    #top_ecosystem_navigation_link, #top_ecosystem_navigation_menu {
+        if !services {
+            display: none;
         }
     }
 }
