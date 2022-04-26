@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.11
+@version        1.0.12
 @description    Small stylesheets for new VK interface.
 @author         sergskokow (https://vk.com/sergskokow)
 @namespace      https://github.com/sergskokow/VK_style_fixes
@@ -29,8 +29,11 @@
     #l_msg .LeftMenu__icon { /* Messenger */
         color: DeepSkyBlue;
     }
-    #l_fr .LeftMenu__icon { /* Friends */
+    #l_ca .LeftMenu__icon { /* Calls */
         color: LimeGreen;
+    }
+    #l_fr .LeftMenu__icon { /* Friends */
+        color: Green;
     }
     #l_gr .LeftMenu__icon { /* Groups */
         color: LightSeaGreen;
@@ -59,6 +62,9 @@
     #l_svd .LeftMenu__icon { /* Clips */
         color: Black;
     }
+    body[scheme='vkcom_dark'] #l_svd .LeftMenu__icon { /* Clips (dark theme) */
+        color: White;
+    }
     #l_ap .LeftMenu__icon { /* Games */
         color: DarkGray;
     }
@@ -73,6 +79,9 @@
     }
     #l_ads .LeftMenu__icon { /* Ads */
         color: LightCoral;
+    }
+    #l_mini_apps .LeftMenu__icon { /* Mini apps */
+        color: MediumTurquoise;
     }
     #l_apm .LeftMenu__icon { /* Manage */
         color: FireBrick;
@@ -94,14 +103,22 @@
     .top_audio_player_btn svg { /* Bar buttons & text */
         color: Black;
     }
+    body[scheme='vkcom_dark'] .TopNavBtn svg,
+    body[scheme='vkcom_dark'] .top_audio_player_btn svg { /* Bar buttons & text (dark theme) */
+        color: White;
+    }
     .top_audio_player_title {
         color: Black !important;
+    }
+    body[scheme='vkcom_dark'] .top_audio_player_title {
+        color: White !important;
     }
 }
 @-moz-document domain("vk.com") { /* Hide call buttons */
     if !show_call_buttons {
         ._im_create_call,
-        .im-page--header-call {
+        .im-page--header-call,
+        .FCWindow__actions button[class=FCIconButton] {
             display: none;
         }
     }
@@ -115,15 +132,27 @@
             border: 2px dashed LightGray;
             border-radius: 10px;
         }
+        body[scheme='vkcom_dark'] .im-mess_editable { /* Editable messages (dark theme) */
+            border: 2px dashed #494949;
+        }
     }
     .nim-dialog_unread { /* Unread by owner */
         background: LightBlue !important;
     }
+    body[scheme='vkcom_dark'] .nim-dialog_unread { /* Unread by owner (dark theme) */
+        background: #494949 !important;
+    }
     .nim-dialog_unread-out { /* Unread by other users */
         background: LightSteelBlue !important;
     }
+    body[scheme='vkcom_dark'] .nim-dialog_unread-out { /* Unread by other users (dark theme) */
+        background: #2e2e2e !important;
+    }
     .nim-dialog--unread { /* Unread dialog sign and message counter */
         background: SteelBlue !important;
+    }
+    body[scheme='vkcom_dark'] .nim-dialog--unread { /* Unread dialog sign and message counter (dark theme) */
+        background: #b3a592 !important;
     }
 }
 @-moz-document domain("vk.com") { /* Highlight users online */
@@ -187,7 +216,7 @@
     }
 }
 @-moz-document domain("vk.com") { /* Display VK ecosystem services */
-    #top_ecosystem_navigation_link, #top_ecosystem_navigation_menu {
+    #react_rootEcosystemServicesNavigationEntry {
         if !services {
             display: none;
         }
