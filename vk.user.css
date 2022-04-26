@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           VK style fixes
-@version        1.0.12
+@version        1.0.13
 @description    Small stylesheets for new VK interface.
 @author         sergskokow (https://vk.com/sergskokow)
 @namespace      https://github.com/sergskokow/VK_style_fixes
@@ -127,6 +127,9 @@
     .im-mess_unread { /* Unread messages */
         background: LightBlue !important;
     }
+    body[scheme='vkcom_dark'] .im-mess_unread { /* Unread messages (dark theme) */
+        background: DarkSlateGray !important;
+    }
     if highlight_editable {
         .im-mess_editable { /* Editable messages */
             border: 2px dashed LightGray;
@@ -180,6 +183,10 @@
         if panels {
             background-color: panel_color !important;
         }
+    }
+    ._im_bar_date,
+    ._im_unread_bar_row { /* Transparent message separators */
+        background: #0000 !important;
     }
     #side_bar_inner { /* Opaque sidebar for better view with background image */
         if panels {
